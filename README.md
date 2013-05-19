@@ -1,4 +1,4 @@
 youku
 =====
 
-an youku video download library, written in golang
+An youku video download library, written in golang
