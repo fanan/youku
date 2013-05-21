@@ -18,13 +18,13 @@ func TestStreamFildIdsParse(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-    vt := sf.ChooseType()
-    if vt != HD2 {
-        t.Error("video type should be hd2")
-    }
-    mix := sf.GetFileIdMixedString(236)
-    if mix != `oGLBIZ\vE-tqa9xkO3KJb/8nYwz2V_4rp0geD7uhHQd1y5PCMXAfUF:6NsmlWiRScTj.` {
-        t.Error("GetFileId error")
-    }
-    logger.Println(sf.GetFileId(236))
+	vt := sf.ChooseType()
+	if vt != HD2 {
+		t.Error("video type should be hd2")
+	}
+	mix := sf.GetFileIdMixedString(236)
+	if mix != `oGLBIZ\vE-tqa9xkO3KJb/8nYwz2V_4rp0geD7uhHQd1y5PCMXAfUF:6NsmlWiRScTj.` {
+		t.Error("GetFileId error")
+	}
+	logger.Println(sf.GetFileId(236))
 }
